@@ -1,0 +1,368 @@
+body {
+    min-width: 320px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: rgba(30, 58, 138, 0.9);
+    backdrop-filter: blur(10px);
+  }
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out;
+    font-size: 1.2rem;
+  }
+  .navbar-nav .nav-link:hover,
+  .navbar .navbar-brand:hover {
+    color: #F59E0B !important;
+  }
+  .navbar-brand {
+
+  }
+  
+  /* Skill logo styling */
+  .skill-logo {
+    max-width: 80px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Hero Section */
+  #hero-section {
+    position: relative;
+    background: radial-gradient(circle at center, #444, #333);
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Animation Background Container */
+  .animation-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  /* Solar System Animation */
+  .solar-system {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* The Sun */
+  .sun {
+    width: 80px;
+    height: 80px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.6);
+  }
+  
+  /* Common orbit styling */
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform-origin: center center;
+    animation: rotateOrbit linear infinite;
+  }
+
+  .orbit1 {
+    width: 116px;
+    height: 116px;
+    margin-left: -58px;
+    margin-top: -58px;
+    animation-duration: 8s;
+  }
+  
+  .orbit2 {
+    width: 216px;
+    height: 216px;
+    margin-left: -108px;
+    margin-top: -108px;
+    animation-duration: 15s;
+  }
+  
+  .orbit3 {
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+    animation-duration: 28s;
+  }
+  
+  .orbit4 {
+    width: 456px;
+    height: 456px;
+    margin-left: -228px;
+    margin-top: -228px;
+    animation-duration: 40s;
+  }
+  
+  .orbit5 {
+    width: 1558px;
+    height: 1558px;
+    margin-left: -779px;
+    margin-top: -779px;
+    animation-duration: 136s;
+  }
+  
+  .orbit6 {
+    width: 2800px;
+    height: 2800px;
+    margin-left: -1400px;
+    margin-top: -1400px;
+    animation-duration: 280s;
+  }
+  
+  .orbit7 {
+    width: 4600px;
+    height: 4600px;
+    margin-left: -2300px;
+    margin-top: -2300px;
+    animation-duration: 560s;
+  }
+  
+  .orbit8 {
+    width: 9000px;
+    height: 9000px;
+    margin-left: -4500px;
+    margin-top: -4500px;
+    animation-duration: 1200s;
+  }
+  
+  /* Planet styling */
+  .planet {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .planet.planet1 {
+    background-color: #b2b2b2;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .planet.planet2 {
+    background-color: #e5c27e;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .planet.planet3 {
+    background-color: #2a5caa;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .planet.planet4 {
+    background-color: #b22222;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .planet.planet5 {
+    background-color: #d1a77f;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .planet.planet6 {
+    background-color: #e3c565;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .planet.planet7 {
+    background-color: #ace5ee;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .planet.planet8 {
+    background-color: rgb(76, 65, 231);
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Keyframe animation to rotate orbits */
+  @keyframes rotateOrbit {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+  }
+  
+  /* Hero */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .hero-heading {
+    margin: 0;
+    font-weight: bold;
+    color: #F8F9FA;
+    font-size: 5rem;
+  }
+  
+  .hero-subheading {
+    margin: 0;
+    color: #F8F9FA;
+    font-size: 2rem;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .google-logo {
+    width: 50px;
+  }
+  
+  /* Sections (Mission, Skills, Contact) */
+  #mission-section,
+  #skills-section,
+  #contact-section {
+    padding: 3rem 0;
+  }
+  
+  #skills-section {
+    background-color: #f8f9fa;
+  }
+  
+  #contact-section {
+    background-color: #f8f9fa;
+  }
+  
+  /* Footer */
+  .footer-custom {
+    background: rgba(30, 58, 138, 0.9);
+    color: #E5E7EB;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .carousel-item .card {
+    background: rgba(30, 58, 138, 0.9);
+    color: #F8F9FA;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-item .card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  /* Custom Carousel Arrows */
+  .custom-prev,
+  .custom-next {
+    z-index: 5;
+    background: none;
+    border: none;
+  }
+  
+  /* Increase arrow size */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 100% 100%;
+    filter: invert(100%);
+  }
+  
+  /* Headshot */
+  .headshot-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headshot {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .headshot-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .headshot-wrapper:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Contact Icons */
+  .contact-icon {
+    font-size: 6rem;
+    color: #1E3A8A;
+    transition: color 0.3s;
+  }
+  
+  .contact-icon:hover {
+    color: #F59E0B;
+  }
+  
+  /* Devicon icons */
+  .dev {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projects-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
